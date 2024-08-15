@@ -9,10 +9,14 @@ $conexion = conexion();
 
 $name = $_GET["name"];
 $description = $_GET["description"];
-$recommendation = $_GET["recommendation"];
+$info_1 = $_GET["info_1"];
+$info_2 = $_GET["info_2"];
+$info_3 = $_GET["info_3"];
+$info_4 = $_GET["info_4"];
+$info_5 = $_GET["info_5"];
 
 
-$sql = "INSERT INTO enfermedades VALUES (NULL, '$name','$description','$recommendation')";
+$sql = "INSERT INTO enfermedades VALUES (NULL, '$name','$description','$info_1','$info_2','$info_3','$info_4','$info_5')";
 
 $query = mysqli_query($conexion, $sql);
 

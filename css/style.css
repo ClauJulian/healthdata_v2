@@ -59,11 +59,17 @@ footer{
 }
 
 /* FORM NEW DATA */
+.cj-formAddDisease{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    background-color: rgb(158, 231, 211);
+}
 .cj-textareaAddData{
-    width: 100%;
+    width: 80%;
     font-size: smaller;
     border:none;
-    height:5rem;
+    height:2.5rem;
     background-color: rgb(158, 231, 211);
 }
 .cj-inputAddData{
@@ -90,7 +96,7 @@ th, td{
     background-color: blue;
 }
 .cj-tdDescriptionContent{
-    width: 15vw; 
+    width: 40vw; 
     padding: 5px; 
     height: 30px;
     overflow:hidden;
@@ -106,7 +112,7 @@ th, td{
     text-overflow:ellipsis; 
 }
 .cj-tdMethod{
-    width: 5vw;
+    width: 10vw;
       
 }
 .cj-groupBtn{
@@ -115,27 +121,30 @@ th, td{
     justify-content: space-between;
     
 }
-.cj-formAddDisease{
-    background-color: rgb(158, 231, 211);
-}
 
-/* Print Area */
+
+/* PRINT AREA */
 .cj-printarea{
     display: flex;
     flex-direction: column; 
     gap: 5rem;
+    margin-top: 3vh;
     width:50vw;
 }
 .cj-print-btn {
-    width: 500px;
-    margin-top: 5vh;
+    width: 100%;
+    margin-top: 3vh;
  }
  .cj-info-firma {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:1rem;
+    margin-bottom: 3vh;
+ }
+ .cj-info-firma p{
+    padding: 0px;
+    margin: 0px;
  }
 /* Estilos generales */
 body {
@@ -154,8 +163,8 @@ body {
 
     #cj-printarea {
         position: absolute;
-        left: 0;
+        left: 20vw;
         top: 0;
-        width: 100%;
+        width: 50%;
     }
 }

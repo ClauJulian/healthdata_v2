@@ -16,13 +16,12 @@ include("heather.php");
 </header>
 
 <main class="container">
-    <div class="container d-flex justify-content-center">
+    <div class="container">
        <table class="table">
            <thead>
             <tr>
                 <th scope="col">Name</th>
                 <th scope="col">Description</th>  
-                <th scope="col">Recommendation</th> 
                 <th scope="col"></th> 
             </tr>
            </thead>
@@ -34,7 +33,6 @@ include("heather.php");
                        <!-- <td><?php echo $fila["id"] ?></td> -->
                        <th scope="row" class="cj-thDataName"><?php echo $fila["name"] ?></th>
                        <td><div class="cj-tdDescriptionContent"><?php echo $fila["description"] ?></div></td>
-                       <td><div class="cj-tdDataContent"><?php echo $fila["recommendation"] ?></div></td>
                        <td class="cj-tdMethod">
                         <div class="cj-groupBtn">
                             <a title="Delette" href="deletteData.php?id=<?php echo $fila["id"]?>"><i class="bi bi-trash3"></i></a>
@@ -44,18 +42,23 @@ include("heather.php");
                         </td>
                    </tr>
               <?php } ?>
-                <!-- FORM FOR ADDING DISEASES     -->
-                    <tr class="cj-formAddDisease">
-                    <form action="addData.php" method="GET">
-                        <th><input type="text" id="name" name="name" class="cj-inputAddData" placeholder="name" required/></th>
-                       <td><textarea type="text" id="description" name="description" class="cj-textareaAddData" placeholder="description" required></textarea></td>
-                       <td><textarea type="text" id="recommendation" name="recommendation" class="cj-textareaAddData" placeholder="recommendation" required></textarea></td>
-                       <td><button class="btn btn-success" id="sendNewData" type="submit">Add Data</button></td>
-                    </form>    
-                    </tr>
+               
               
            </tbody>
         </table>
+         <!-- FORM FOR ADDING DISEASES     -->
+         <div class="cj-formAddDisease">
+            <form action="addData.php" method="GET">
+                <input type="text" id="name" name="name" class="cj-inputAddData" placeholder="name" required/>
+                <input type="text" id="description" name="description" class="cj-textareaAddData" placeholder="description" required></input>
+                <input type="text" id="info_1" name="info_1" class="cj-textareaAddData" placeholder="recommendation 1" ></input>
+                <input type="text" id="info_2" name="info_2" class="cj-textareaAddData" placeholder="recommendation 2" ></input>
+                <input type="text" id="info_3" name="info_3" class="cj-textareaAddData" placeholder="recommendation 3" ></input>
+                <input type="text" id="info_4" name="info_4" class="cj-textareaAddData" placeholder="recommendation 4" ></input>
+                <input type="text" id="info_5" name="info_5" class="cj-textareaAddData" placeholder="recommendation 5" ></input>
+                <button class="btn btn-success" id="sendNewData" type="submit">Add Data</button>
+            </form>    
+        </div>
 
     </div>   
 </main>

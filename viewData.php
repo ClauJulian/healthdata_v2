@@ -12,7 +12,7 @@ include("heather.php");
 ?> 
 
 
-<main class="container">
+<main class="container d-flex justify-content-center">
     <div class="cj-printarea" id="cj-printarea">
         <?php
         while($fila=mysqli_fetch_assoc($query)){
@@ -24,10 +24,12 @@ include("heather.php");
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $fila["name"] ?></h5>
                     <ol class="list-group list-group-flush">
-                        <li class="list-group-item"><?php echo $fila["recommendation"] ?></li>
-                        <li class="list-group-item"><?php echo $fila["recommendation"] ?></li>
-                    </ol>
-                            
+                        <li class="list-group-item"><?php echo $fila["info_1"] ?></li>
+                        <li class="list-group-item"><?php echo $fila["info_2"] ?></li>
+                        <li class="list-group-item"><?php echo $fila["info_3"] ?></li>
+                        <li class="list-group-item"><?php echo $fila["info_4"] ?></li>
+                        <li class="list-group-item"><?php echo $fila["info_5"] ?></li>
+                    </ol>                    
                 </div>
                 <div class="cj-info-firma">
                     <p>Dr. Nombre Apellido</p> 
@@ -41,6 +43,7 @@ include("heather.php");
         <?php } ?>
         <button type="submit" class="btn btn-primary cj-print-btn">Print</button>
     </div>
+
 </main>
 
 
