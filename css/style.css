@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+:root{
+    --color--background: rgb(232, 229, 229);
+    --color--mainbtn: green;
+    --color--secondbtn: blue;
+    --color--mainbtn-hover: lightgreen;
+    --color--secondbtn-hover: lightblue;
+    --color--text--active:black;
+    --color--text--pasive:black;
+}
+main{
+    min-height: 70vh;
+}
+table{
+    width: 80vw;
+    border-collapse: collapse;
+}
+/* CLASES */
+
+
+/* HEADER */
+.cj-banner {
+    display:flex;
+     flex-direction: column;
+     align-items: flex-end;
+ 
+     background-image:linear-gradient(rgba(1, 9, 52, 0.3),rgba(8, 1, 65, 0.3)),url(../img/hdbanner.jpg);
+ 
+     height: 50vh;
+     margin-bottom: 3vh;
+ }
+ 
+
+/* FOOTER */
+footer{
+    background-color: rgba(14,67,87,1);
+    margin-top: 5vh;
+    padding:2vh;
+}
+.cj-cajaFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cj-menuFooter{
+    color:whitesmoke;
+    text-decoration: unset;
+}
+.cj-menuFooter:hover{
+    color:lightgrey;
+}
+.cj-signatureFooter{
+    margin-top: 3rem;
+    color:rgb(0, 128, 255);
+}
+
+/* FORM NEW DATA */
+.cj-textareaAddData{
+    width: 100%;
+    font-size: smaller;
+    border:none;
+    height:5rem;
+    background-color: rgb(158, 231, 211);
+}
+.cj-inputAddData{
+    width: 100%;
+    border:none;
+    background-color: rgb(158, 231, 211);
+}
+
+/* LIST DATA */
+::placeholder{
+    color:whitesmoke;
+    font-size: medium;
+}
+th, td{
+    height: 30px;
+    overflow: hidden;
+}
+.cj-trDataList{    
+    height:30px;      
+    
+}
+.cj-thDataName{
+    width: 4vw; 
+    background-color: blue;
+}
+.cj-tdDescriptionContent{
+    width: 15vw; 
+    padding: 5px; 
+    height: 30px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+.cj-tdDataContent{ 
+    width: 25vw; 
+    padding: 5px; 
+    height: 30px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis; 
+}
+.cj-tdMethod{
+    width: 5vw;
+      
+}
+.cj-groupBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.cj-formAddDisease{
+    background-color: rgb(158, 231, 211);
+}
+
+/* Print Area */
+.cj-printarea{
+    display: flex;
+    flex-direction: column; 
+    gap: 5rem;
+    width:50vw;
+}
+.cj-print-btn {
+    width: 500px;
+    margin-top: 5vh;
+ }
+ .cj-info-firma {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+ }
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+@media print {
+    body * {
+        visibility: hidden; /* Oculta todo */
+    }
+
+    #cj-printarea, #cj-printarea * {
+        visibility: visible; /* Muestra solo el todo-list */
+    }
+
+    #cj-printarea {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+}
