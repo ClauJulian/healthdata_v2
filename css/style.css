@@ -6,11 +6,14 @@
 :root{
     --color--background: rgb(232, 229, 229);
     --color--mainbtn: green;
-    --color--secondbtn: blue;
+    --color--secondbtn: rgb(71, 58, 170);
     --color--mainbtn-hover: lightgreen;
     --color--secondbtn-hover: lightblue;
     --color--text--active:black;
-    --color--text--pasive:black;
+    --color--text--pasive:rgb(251, 251, 251);
+    --color--placeholder:rgb(223, 236, 229);
+    --color--text--muted:rgb(140, 156, 148);
+
 }
 main{
     min-height: 70vh;
@@ -21,67 +24,63 @@ table{
 }
 /* CLASES */
 
-
 /* HEADER */
+.cj-nav{
+    background-color: var(--color--secondbtn-hover);
+}
 .cj-banner {
     display:flex;
-     flex-direction: column;
-     align-items: flex-end;
- 
-     background-image:linear-gradient(rgba(1, 9, 52, 0.3),rgba(8, 1, 65, 0.3)),url(../img/hdbanner.jpg);
- 
-     height: 50vh;
-     margin-bottom: 3vh;
+    flex-direction: column;
+    align-items: flex-end;
+    width:100%;
+    background-image: url(../img/medical_cover_small.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh; 
+    margin-bottom: 3vh;
  }
- 
 
-/* FOOTER */
-footer{
-    background-color: rgba(14,67,87,1);
-    margin-top: 5vh;
-    padding:2vh;
-}
-.cj-cajaFooter{
+
+/* */
+.table_area {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
-.cj-menuFooter{
-    color:whitesmoke;
-    text-decoration: unset;
-}
-.cj-menuFooter:hover{
-    color:lightgrey;
-}
-.cj-signatureFooter{
-    margin-top: 3rem;
-    color:rgb(0, 128, 255);
-}
-
 /* FORM NEW DATA */
 .cj-formAddDisease{
-    display: flex;
+    display: none;
     flex-direction: column;
+    justify-content: center;
     width: 80vw;
-    background-color: rgb(158, 231, 211);
+    margin-top: 3vh;
+    color: var(--color--mainbtn);
 }
-.cj-textareaAddData{
-    width: 80%;
-    font-size: smaller;
-    border:none;
-    height:2.5rem;
-    background-color: rgb(158, 231, 211);
-}
+
 .cj-inputAddData{
     width: 100%;
-    border:none;
-    background-color: rgb(158, 231, 211);
+    font-size: smaller;
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    background-color: var(--color--placeholder);
+    border: none;
+    height:3rem;
+}
+/* EDIT DATA */
+.cj-formEditData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    margin-top: 3vh;
+    color: var(--color--mainbtn);
 }
 
 /* LIST DATA */
 ::placeholder{
-    color:whitesmoke;
+    color:var(--color--text--muted);
     font-size: medium;
+    padding-left: 0.5rem;
 }
 th, td{
     height: 30px;
@@ -93,7 +92,6 @@ th, td{
 }
 .cj-thDataName{
     width: 4vw; 
-    background-color: blue;
 }
 .cj-tdDescriptionContent{
     width: 40vw; 
@@ -119,7 +117,12 @@ th, td{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    color:var(--color--mainbtn);
+}
+.cj-groupBtn a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem;
 }
 
 
@@ -146,10 +149,10 @@ th, td{
     padding: 0px;
     margin: 0px;
  }
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-}
+ .list-group-item{
+    border:none;
+ }
+
 
 
 @media print {
@@ -167,4 +170,27 @@ body {
         top: 0;
         width: 50%;
     }
+}
+
+/* FOOTER */
+footer{
+    background-color: var(--color--secondbtn);
+    margin-top: 5vh;
+    padding:2vh;
+}
+.cj-cajaFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cj-menuFooter{
+    color:whitesmoke;
+    text-decoration: unset;
+}
+.cj-menuFooter:hover{
+    color:lightgrey;
+}
+.cj-signatureFooter{
+    margin-top: 3rem;
+    color: var(--color--text--muted);
 }

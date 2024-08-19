@@ -23,13 +23,13 @@ include("heather.php");
                 <h5 class="card-header">Información</h5>
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $fila["name"] ?></h5>
-                    <ol class="list-group list-group-flush">
+                    <ul class="list-group list-group-flush">
                         <li class="list-group-item"><?php echo $fila["info_1"] ?></li>
                         <li class="list-group-item"><?php echo $fila["info_2"] ?></li>
                         <li class="list-group-item"><?php echo $fila["info_3"] ?></li>
                         <li class="list-group-item"><?php echo $fila["info_4"] ?></li>
                         <li class="list-group-item"><?php echo $fila["info_5"] ?></li>
-                    </ol>                    
+                    </ul>                    
                 </div>
                 <div class="cj-info-firma">
                     <p>Dr. Nombre Apellido</p> 
