@@ -9,10 +9,10 @@ $query = mysqli_query($conexion, $sql);
 include("heather.php");
 ?> 
 <header>
-          <!--  Banner -->
-          <div class="cj-banner text-end" style="width: 100vw;">
-          </div>
-          <!-- Fin Banner -->
+    <!--  Banner -->
+    <div class="cj-banner text-end" style="width: 100vw;">
+    </div>
+    <!-- Fin Banner -->
 </header>
 
 <main class="container">

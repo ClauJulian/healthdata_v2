@@ -15,6 +15,7 @@
     --color--text--muted:rgb(140, 156, 148);
 
 }
+/* ETIQUETAS */
 main{
     min-height: 70vh;
 }
@@ -22,9 +23,14 @@ table{
     width: 80vw;
     border-collapse: collapse;
 }
-/* CLASES */
+footer{
+    background-color: var(--color--secondbtn);
+    margin-top: 5vh;
+    padding:2vh;
+}
 
-/* HEADER */
+
+/* CLASES HEADER */
 .cj-nav{
     background-color: var(--color--secondbtn-hover);
 }
@@ -41,13 +47,7 @@ table{
     margin-bottom: 3vh;
  }
 
-
-/* */
-.table_area {
-    display: flex;
-    justify-content: center;
-}
-/* FORM NEW DATA */
+/* CLASES FORM NEW DATA */
 .cj-formAddDisease{
     display: none;
     flex-direction: column;
@@ -66,7 +66,8 @@ table{
     border: none;
     height:3rem;
 }
-/* EDIT DATA */
+
+/* CLASES EDIT DATA */
 .cj-formEditData{
     display: flex;
     flex-direction: column;
@@ -76,7 +77,11 @@ table{
     color: var(--color--mainbtn);
 }
 
-/* LIST DATA */
+/* CLASES LIST DATA */
+.table_area {
+    display: flex;
+    justify-content: center;
+}
 ::placeholder{
     color:var(--color--text--muted);
     font-size: medium;
@@ -87,8 +92,7 @@ th, td{
     overflow: hidden;
 }
 .cj-trDataList{    
-    height:30px;      
-    
+    height:30px;          
 }
 .cj-thDataName{
     width: 4vw; 
@@ -126,7 +130,7 @@ th, td{
 }
 
 
-/* PRINT AREA */
+/* CLASES PRINT AREA */
 .cj-printarea{
     margin-top: 5vh;
     width:40vw;
@@ -147,7 +151,7 @@ th, td{
  }
 
 
-
+/* ZONA DE IMPRESION */
 @media print {
     body * {
         visibility: hidden; /* Oculta todo */
@@ -165,12 +169,8 @@ th, td{
     }
 }
 
-/* FOOTER */
-footer{
-    background-color: var(--color--secondbtn);
-    margin-top: 5vh;
-    padding:2vh;
-}
+/* CLASES FOOTER */
+
 .cj-cajaFooter{
     display: flex;
     flex-direction: row;
@@ -187,3 +187,5 @@ footer{
     margin-top: 3rem;
     color: var(--color--text--muted);
 }
+
+/* MEDIA QUERY*/
