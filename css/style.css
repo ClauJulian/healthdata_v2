@@ -128,16 +128,9 @@ th, td{
 
 /* PRINT AREA */
 .cj-printarea{
-    display: flex;
-    flex-direction: column; 
-    gap: 5rem;
-    margin-top: 3vh;
-    width:50vw;
+    margin-top: 5vh;
+    width:40vw;
 }
-.cj-print-btn {
-    width: 100%;
-    margin-top: 3vh;
- }
  .cj-info-firma {
     display: flex;
     flex-direction: column;
