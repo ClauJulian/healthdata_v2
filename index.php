@@ -8,21 +8,21 @@ $query = mysqli_query($conexion, $sql);
 
 include("heather.php");
 ?> 
+
 <header>
-    <!--  Banner -->
     <div class="cj-banner text-end" style="width: 100vw;">
     </div>
-    <!-- Fin Banner -->
 </header>
 
-<main class="container">
-    <div class="table_area">
-       <table class="table">
+<main>
+    <div class="container">
+    <div class="table_area table-responsive">
+       <table class="table table-striped table-hover">
            <thead>
             <tr>
                 <th scope="col">Name</th>
                 <th scope="col">Description</th>  
-                <th scope="col"></th> 
+                <th scope="col">#</th> 
             </tr>
            </thead>
            <tbody>
@@ -33,6 +33,7 @@ include("heather.php");
                        <!-- <td><?php echo $fila["id"] ?></td> -->
                        <th scope="row" class="cj-thDataName"><?php echo $fila["name"] ?></th>
                        <td><div class="cj-tdDescriptionContent"><?php echo $fila["description"] ?></div></td>
+                       <!-- <td class="cj-tdDescriptionContent"><?php echo $fila["description"] ?></td> -->
                        <td class="cj-tdMethod">
                         <div class="cj-groupBtn">
                             <a title="Delette" href="deletteData.php?id=<?php echo $fila["id"]?>"><i class="bi bi-trash3"></i></a>
@@ -41,11 +42,12 @@ include("heather.php");
                         </div>
                         </td>
                    </tr>
-              <?php } ?>
-                             
+              <?php } ?>                             
            </tbody>
         </table>
     </div>
+    </div>
+
     <div>
         <button class="btn btn-success" id="displayNewData">Agregar Nueva Enfermedad</button>
     </div>
@@ -60,12 +62,10 @@ include("heather.php");
                 <input type="text" id="info_4" name="info_4" class="cj-inputAddData" placeholder="recommendation 4" ></input>
                 <input type="text" id="info_5" name="info_5" class="cj-inputAddData" placeholder="recommendation 5" ></input>
                 <button class="btn btn-success" id="sendNewData" type="submit">Add Data</button>    
-            </form>
-            
-        </div>
-
-       
+            </form>           
+        </div>       
 </main>
+
 <?php 
 include("footer.php");
 ?>

@@ -16,11 +16,24 @@
 
 }
 /* ETIQUETAS */
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    width: 100vw;}
 main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
     min-height: 70vh;
 }
 table{
-    width: 80vw;
+    width:100%;
     border-collapse: collapse;
 }
 footer{
@@ -79,6 +92,7 @@ footer{
 
 /* CLASES LIST DATA */
 .table_area {
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -98,21 +112,24 @@ th, td{
     width: 4vw; 
 }
 .cj-tdDescriptionContent{
-    width: 40vw; 
+    width:80%; 
     padding: 5px; 
     height: 30px;
     overflow:hidden;
     white-space: nowrap;
     text-overflow:ellipsis;
 }
-.cj-tdDataContent{ 
+/* .cj-thDescriptionContent{
+    width: 30vw;
+} */
+/* .cj-tdDataContent{ 
     width: 25vw; 
     padding: 5px; 
     height: 30px;
     overflow:hidden;
     white-space: nowrap;
     text-overflow:ellipsis; 
-}
+} */
 .cj-tdMethod{
     width: 10vw;
       
