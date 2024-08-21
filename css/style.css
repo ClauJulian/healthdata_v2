@@ -8,9 +8,9 @@
     --color--mainbtn: green;
     --color--secondbtn: rgb(71, 58, 170);
     --color--mainbtn-hover: lightgreen;
-    --color--secondbtn-hover: lightblue;
+    --color--secondbtn-hover: rgb(204, 236, 247);
     --color--text--active:black;
-    --color--text--pasive:rgb(251, 251, 251);
+    --color--text--pasive:rgb(223, 225, 234);
     --color--placeholder:rgb(223, 236, 229);
     --color--text--muted:rgb(140, 156, 148);
 
@@ -42,6 +42,12 @@ footer{
     padding:2vh;
 }
 
+/* SEUDOCLASES */
+::placeholder{
+    color:var(--color--text--muted);
+    font-size: medium;
+    padding-left: 0.5rem;
+}
 
 /* CLASES HEADER */
 .cj-nav{
@@ -69,7 +75,6 @@ footer{
     margin-top: 3vh;
     color: var(--color--mainbtn);
 }
-
 .cj-inputAddData{
     width: 100%;
     font-size: smaller;
@@ -91,59 +96,31 @@ footer{
 }
 
 /* CLASES LIST DATA */
-.table_area {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.cj-table {
+    margin-bottom: 10vh;
 }
-::placeholder{
-    color:var(--color--text--muted);
-    font-size: medium;
-    padding-left: 0.5rem;
+.cj-list-row{
+    border-bottom: 1px solid var(--color--text--muted);
 }
-th, td{
-    height: 30px;
-    overflow: hidden;
-}
-.cj-trDataList{    
-    height:30px;          
-}
-.cj-thDataName{
-    width: 4vw; 
-}
-.cj-tdDescriptionContent{
-    width:80%; 
-    padding: 5px; 
-    height: 30px;
-    overflow:hidden;
-    white-space: nowrap;
-    text-overflow:ellipsis;
-}
-/* .cj-thDescriptionContent{
-    width: 30vw;
-} */
-/* .cj-tdDataContent{ 
-    width: 25vw; 
-    padding: 5px; 
-    height: 30px;
-    overflow:hidden;
-    white-space: nowrap;
-    text-overflow:ellipsis; 
-} */
-.cj-tdMethod{
-    width: 10vw;
-      
+.cj-list-row:hover{
+    border-bottom: none;
+    background-color: var(--color--text--muted);
+    color: var(--color--text--pasive);
 }
 .cj-groupBtn{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-around;
+    align-items: center;
     color:var(--color--mainbtn);
 }
 .cj-groupBtn a {
     text-decoration: none;
     color: inherit;
     font-size: 1.5rem;
+}
+.cj-groupBtn a:hover {
+    color: var(--color--text--pasive);
 }
 
 
@@ -187,7 +164,6 @@ th, td{
 }
 
 /* CLASES FOOTER */
-
 .cj-cajaFooter{
     display: flex;
     flex-direction: row;
