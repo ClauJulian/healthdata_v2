@@ -20,28 +20,27 @@ include("heather.php");
         <!-- <p><?php echo $fila["id"] ?></p> -->
 
             <div class="card border">
-                <h5 class="card-header">Recommendation</h5>
-                <div class="card-body">
+                <h5 class="card-header pt-3 pb-3">Recommendations</h5>
+                <div class="card-body mt-3">
                     <h5 class="card-title"><?php echo $fila["name"] ?></h5>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><?php echo $fila["info_1"] ?></li>
-                        <li class="list-group-item"><?php echo $fila["info_2"] ?></li>
-                        <li class="list-group-item"><?php echo $fila["info_3"] ?></li>
-                        <li class="list-group-item"><?php echo $fila["info_4"] ?></li>
-                        <li class="list-group-item"><?php echo $fila["info_5"] ?></li>
+                        <li class="list-group-item fst-italic"><?php echo $fila["info_1"] ?></li>
+                        <li class="list-group-item fst-italic"><?php echo $fila["info_2"] ?></li>
+                        <li class="list-group-item fst-italic"><?php echo $fila["info_3"] ?></li>
+                        <li class="list-group-item fst-italic"><?php echo $fila["info_4"] ?></li>
+                        <li class="list-group-item fst-italic"><?php echo $fila["info_5"] ?></li>
                     </ul>                    
                 </div>
-                <div class="cj-info-firma">
+                <div class="cj-info-firma mt-4 mb-4">
                     <p>Dr. Carla Perrota</p> 
                     <p>Matricula 4567/01</p> 
                 </div>  
                 <div class="card-footer">
-                    <p>Avenue Collins, 3400, Dublin Nord - Phone 388 34567</p>
+                    <p class="fs-6 fw-lighter">Avenue Collins, 3400, Dublin Nord - Phone 388 34567</p>
                 </div>  
             </div>
         
         <?php } ?>
-        <!-- <button type="submit" class="btn btn-primary cj-print-btn">Print</button> -->
     </div>
 
 </main>
