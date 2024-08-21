@@ -10,7 +10,7 @@
     --color--mainbtn-hover: lightgreen;
     --color--secondbtn-hover: rgb(204, 236, 247);
     --color--text--active:black;
-    --color--text--pasive:rgb(223, 225, 234);
+    --color--text--pasive:rgb(233, 234, 237);
     --color--placeholder:rgb(223, 236, 229);
     --color--text--muted:rgb(140, 156, 148);
 
@@ -98,9 +98,18 @@ footer{
 /* CLASES LIST DATA */
 .cj-table {
     margin-bottom: 10vh;
+    padding: 2rem;
+    background-color: var(--color--text--pasive);
+    border-radius: 2rem;
+    box-shadow:3px 3px 5px var(--color--text--muted);
+}
+.cj-table-title {
+    font-weight: bolder;
+    border-bottom: 2px solid var(--color--text--active);
 }
 .cj-list-row{
     border-bottom: 1px solid var(--color--text--muted);
+    padding: 0.5rem;
 }
 .cj-list-row:hover{
     border-bottom: none;

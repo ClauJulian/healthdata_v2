@@ -17,7 +17,7 @@ include("heather.php");
 <main>
      
     <div class="container cj-table">
-        <div class="row">
+        <div class="row cj-table-title">
             <div class="col">Name</div>
             <div class="col-6">Description</div>
             <div class="col">Action</div>
