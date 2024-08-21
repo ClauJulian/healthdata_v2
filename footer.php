@@ -1,12 +1,12 @@
 <footer>
     <div class="container text-center" style="width:90vw;">
       <div class="cj-cajaFooter row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-auto">
-        <div class="col"><a href="" class="cj-menuFooter">Preguntas Frecuentes</a></div>
-        <div class="col"><a href="" class="cj-menuFooter">Contáctanos</a></div>
-        <div class="col"><a href="" class="cj-menuFooter">Prensa</a></div>
+        <div class="col"><a href="" class="cj-menuFooter">Privacy Policy</a></div>
+        <div class="col"><a href="" class="cj-menuFooter">Contact Us</a></div>
+        <div class="col"><a href="" class="cj-menuFooter">Blog</a></div>
       </div>
       <div class="cj-signatureFooter">
-        <div><small> @ Derechos Reservados 2024 Developer Full Stack Claudia E. Julian </small></div>
+        <div><small> @Code Licensed 2024  Currently v1.0.0  Claudia E. Julian  Website Builder</small></div>
       </div>
     </div>
 </footer>

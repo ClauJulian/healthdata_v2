@@ -20,7 +20,7 @@ include("heather.php");
         <!-- <p><?php echo $fila["id"] ?></p> -->
 
             <div class="card border">
-                <h5 class="card-header">Información</h5>
+                <h5 class="card-header">Recommendation</h5>
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $fila["name"] ?></h5>
                     <ul class="list-group list-group-flush">
@@ -32,11 +32,11 @@ include("heather.php");
                     </ul>                    
                 </div>
                 <div class="cj-info-firma">
-                    <p>Dr. Nombre Apellido</p> 
-                    <p>Matricula</p> 
+                    <p>Dr. Carla Perrota</p> 
+                    <p>Matricula 4567/01</p> 
                 </div>  
                 <div class="card-footer">
-                    <p>Telefono Turnos y datos de interés</p>
+                    <p>Avenue Collins, 3400, Dublin Nord - Phone 388 34567</p>
                 </div>  
             </div>
         

@@ -32,16 +32,15 @@ include("heather.php");
             <div class="col cj-groupBtn">
                 <a title="Delette" href="deletteData.php?id=<?php echo $fila["id"]?>"><i class="bi bi-trash3"></i></a>
                 <a title="Edit" href="formEditarData.php?id=<?php echo $fila["id"]?>"><i class="bi bi-file-earmark-font"></i></a> 
-                <a title="Print" href="viewData.php?id=<?php echo $fila["id"]?>"><i class="bi bi-card-checklist"></i></a> 
+                <a title="Print" href="viewData.php?id=<?php echo $fila["id"]?>"><i class="bi bi-file-earmark-text"></i></a> 
             </div>
         </div>
         <?php } ?>  
     </div>
 
     <div>
-        <button class="btn btn-success" id="displayNewData">Agregar Nueva Enfermedad</button>
+        <button class="btn btn-success" id="displayNewData">Add New Data</button>
     </div>
-         <!-- FORM FOR ADDING DISEASES     -->
          <div class="cj-formAddDisease" id="cj-formAddDisease">
             <form action="addData.php" method="GET">
                 <input type="text" id="name" name="name" class="cj-inputAddData" placeholder="name" required/>

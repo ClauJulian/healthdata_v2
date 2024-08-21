@@ -23,11 +23,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
+          </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="index.php">Enfermedades</a>
+            <a class="nav-link active" href="index.php">Home</a>
           </li>
         </ul>
         <!-- <form class="d-flex" role="search">
